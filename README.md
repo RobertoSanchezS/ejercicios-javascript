@@ -215,6 +215,13 @@ Escribir una función llamada `sumarArreglo` que reciba tres argumentos: un arre
 
 ```javascript
 // escribe tu respuesta acá
+function sumarArreglo(arreglo, inicial, final) {
+    let suma = 0;
+    for (let i = inicial; i <= final; i++) {
+        suma += arreglo[i];
+    }
+    return suma;
+}
 
 // código de prueba
 console.log(sumarArreglo([1, 2, 3], 1, 2)) // 5
